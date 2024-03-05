@@ -8,6 +8,10 @@ import br.com.lucas.cm.modelo.Tabuleiro;
 public class TelaPrincipal extends JFrame {
 	
 	public TelaPrincipal() {
+		
+		
+		int porta = Integer.parseInt(System.getenv("PORT"));
+		
 		Tabuleiro tabuleiro = new Tabuleiro(16, 30, 50);
 		
 		add(new PainelTabuleiro(tabuleiro));
