@@ -25,6 +25,7 @@ public class TelaPrincipal extends JFrame {
 
 	public static void main(String[] args) {
 		new TelaPrincipal();
+		int porta = Integer.parseInt(System.getenv("PORT"));
 	}
 	
 }
